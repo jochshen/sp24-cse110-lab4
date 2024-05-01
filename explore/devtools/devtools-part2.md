@@ -1,0 +1,2 @@
+1. The bug was that when it got the value using `document.getElementById("num1").value;`, it was of `string` type. When you add two strings together in Javascript, it concats them together rather than add up their numerical values which was the expected output. 
+2. To fix it, I would add a `parseInt()` function for both `num1` and `num2` to convert them to type `number` before summing them together. 
